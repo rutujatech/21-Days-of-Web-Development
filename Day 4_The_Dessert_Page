@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <title>Dessert</title>
+</head>
+<body>
+    <div class="container">
+        <div class="pic">
+            <img src="./img/dessert.jpg" src="dessert" class="picture"></img>
+        </div>
+        <div class="des">
+            <h3>Menu</h3>
+            <h1>The Desserts</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, officiis. Amet, unde repellat labore molestiae reprehenderit ut porro provident alias non perspiciatis vitae corporis magnam dolor voluptatem maxime consequuntur soluta voluptatibus harum cumque consectetur quaerat facere? Nisi, sit numquam rem doloribus eius, laudantium nam accusamus quisquam delectus voluptatum voluptate explicabo ad praesentium ratione harum deleniti veritatis hic! Enim, aut pariatur.</p>
+            <button class="btn">view more</button>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    display: flex;
+    border: 1px solid lightgrey;
+    box-shadow: 4px 8px 2px  #f1f1f1;
+    background-color:#ffd1dc;
+}
+
+.pic{
+    margin: 0.8rem 0.6rem ;
+    padding: 3rem;
+    flex-grow: 1;
+}
+
+.des{
+    margin: 0.8rem 0.6rem;
+    padding: 3rem;
+    line-height: 1.2;
+    flex-grow: 2;
+}
+
+.des > h3 {
+    color:#a94064;
+    font-size: 500;
+}
+
+.des > h1 {
+    color:#ff1493;
+    font-size: 800;
+}
+
+.btn{
+    margin: 1rem;
+    padding: 0.6rem;
+    background-color: #fff;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
