@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>WildWoods</title>
+</head>
+<body>
+    <div class="head">
+        <h1 >WildWoods</h1>
+    </div>
+
+    <!-- <div class="content">
+        <div class="hexagon">
+        </div>
+        <div class="hex"><img src="./img/forest1.jpg" alt=""></div>
+        <div class="hex"><img src="./img/forest2.jpg" alt=""></div>
+        <div class="hex"><img src="./img/fire.jpg" alt=""></div>
+        <div class="hex"><img src="./img/nightforest.jpg" alt=""></div>
+        <div class="hex"><img src="./img/waterside.jpg" alt=""></div>
+        <div class="hex"><img src="./img/woods.jpg" alt=""></div>
+        <div class="hex"><img src="./img/viewforest.jpg" alt=""></div>
+        <div class="hex"><img src="./img/sea.jpg" alt=""></div>
+        <div class="hex"><img src="./img/snow.jpg" alt=""></div>
+        <div class="hex"><img src="./img/railtrack.jpg" alt=""></div>
+        <div class="hex"><img src="./img/demo.jpg" alt=""></div>
+    </div> -->
+
+    <section class="hexagon-gallery">
+        <div class="hex"><img src="./img/waterside.jpg" alt="some"></div>
+        <div class="hex"><img src="./img/forest2.jpg" alt="some"></div>
+        <div class="hex"><img src="./img/bridge.jpg" alt="some"></div>
+        <div class="hex"><img src="./img/beachside.jpg" alt="some"></div>
+        <div class="hex"><img src="./img/pines.jpg" alt="some"></div>
+        <div class="hex"><img src="./img/railtrack.jpg" alt="some"></div>
+        <div class="hex"><img src="./img/forest1.jpg" alt="some"></div>
+        <div class="hex"><img src="./img/woods.jpg" alt="some"></div>
+        <div class="hex"><img src="./img/sea.jpg" alt="some"></div>
+        <div class="hex"><img src="./img/snow.jpg" alt="some"></div>
+      </section>
+
+      <footer class="footer">
+        <div class="social-media-links">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter "></i>
+        </div>
+        <p>WildWoods &copy; 2022<p>
+    </footer>      
+</body>
+</html>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    background-color:#c6e5d9 ;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    color: #e94e77;
+    font-size: xx-large;
+
+}
+
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .hexagon-gallery {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 14px;
+    padding-bottom: 200px;
+
+    
+  }
+  
+  .hex {
+    display: flex;
+    position: relative;
+    width: 240px;
+    height: 265px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  
+  .hex:first-child {
+    grid-row-start: 1;
+    grid-column: 2 / span 2;
+  }
+  
+  .hex:nth-child(2) {
+    grid-row-start: 1;
+    grid-column: 4 / span 2;
+  }
+  
+  .hex:nth-child(3) {
+    grid-row-start: 1;
+    grid-column: 6 / span 2;
+  }
+  
+  .hex:nth-child(4) {
+    grid-row-start: 2;
+    grid-column: 1 / span 2;
+  }
+  
+  .hex:nth-child(5) {
+    grid-row-start: 2;
+    grid-column: 3 / span 2;
+  }
+  
+  .hex:nth-child(6) {
+    grid-row-start: 2;
+    grid-column: 5 / span 2;
+  }
+  
+  .hex:nth-child(7) {
+    grid-row-start: 2;
+    grid-column: 7 / span 2;
+  }
+  
+  .hex:nth-child(8) {
+    grid-row-start: 3;
+    grid-column: 2 / span 2;
+  }
+  
+  .hex:nth-child(9) {
+    grid-row-start: 3;
+    grid-column: 4 / span 2;
+  }
+  
+  .hex:nth-child(10) {
+    grid-row-start: 3;
+    grid-column: 6 / span 2;
+  }
+
+  .footer{
+    font-size: x-large;
+    padding: 20px;
+    text-align: center;
+}
+.social-media-links i{
+    margin: 8px;
+    margin-bottom: 15px;
+}
